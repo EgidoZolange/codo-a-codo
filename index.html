@@ -8,6 +8,7 @@
 
     <!--==================== FontAwesome ====================-->
     <script src="https://kit.fontawesome.com/f59d895a33.js" crossorigin="anonymous"></script>
+
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
@@ -16,16 +17,61 @@
 
 <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+        <nav class="nav container" id="nav">
+            <input type="checkbox" id="click">
+            <a href="#home">
+                <div class="nav__logo">Reloj SA</div>
+            </a>
+
+            <label for="click" class="nav__button">
+                <i class="fas fa-bars nav__icon"></i>
+            </label>
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#our__products" class="nav__link">
+                        Our Products
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#testimonial" class="nav__link">
+                        Testimonial
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        About
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact-us" class="nav__link">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
-
+            <div class="home__background container">
+                <p class="home__title">
+                    Relojes&nbsp;SA</p>
+                <h3 class="home__subtitle">
+                    Ponemos el tiempo en tus manos
+                </h3>
+            </div>
         </section>
         <!--==================== OUR PRODUCTS ====================-->
         <section class="our__products section" id="our__products">
-
+            
         </section>
         <!--==================== TESTIMONIAL ====================-->
         <section class="testimonial section" id="testimonial">
@@ -44,11 +90,11 @@
                     <img src="./images/about_empresa.jpg" alt="foto del equipo" class="about_image">
                 </figure>
             </div>
-
+            
         </section>
         <!--==================== CONTACT US ====================-->
-        <section class="contact__us section" id="contact__us">
-
+        <section class="contact-us section" id="contact-us">
+            
         </section>
     </main>
 
