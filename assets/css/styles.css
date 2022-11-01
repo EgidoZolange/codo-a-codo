@@ -71,6 +71,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 h1 {
     font-family: var(--body-font);
 }
@@ -79,59 +83,184 @@ h1 {
 /*==================== BUTTONS ====================*/
 /*==================== LAYOUT ====================*/
 /*==================== NAV ====================*/
-.nav{
+.nav {
+    display: flex;
     height: 80px;
-    background: var(--first-color);
-}
-
-.nav__logo{
-    height: 150px;
-    position: absolute;
-    top: var(--mb-1);
-    left: 12%;
-}
-
-.nav__list{
-    float: right;
-    margin-right: var(--mb-0-25);
-}
-
-.nav__item{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 15px;
-}
-
-.nav__link{
-    position: relative;
-    color: white;
-    font-size: var(--font-medium);
-    text-transform: uppercase;
-}
-
-.nav__link::before{
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    height: 2px;
     width: 100%;
-    background: var(--first-color-lighter);
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform .3s linear;
+    background: #1b1b1b;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
 }
 
-.nav__link:hover:before{
-    transform: scaleX(1);
-    transform-origin: left;
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.nav__logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.nav__item {
+    margin: 0 5px;
+}
+
+.nav__button .nav__icon{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.nav__link:hover{
+    color: #111;
+    background: #fff;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .nav{
+        padding: 0 40px 0 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    .nav__button .nav__icon{
+        display: block;
+    }
+
+    .nav__list{
+        z-index: 1000;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked~ul {
+        left: 0;
+    }
+
+    .nav__item{
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    .nav__link{
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+
+    .nav__link:hover{
+        background: none;
+        color: cyan;
+    }
+}
 /* Active link */
 
 /* Change background header */
 
 /*==================== HOME ====================*/
+
+.home::after{
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/pexels-fernando-arcos-190819.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(4px);
+    transition: all 1000ms;
+}
+
+.home:hover::after{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.home__background:hover{
+    filter: blur(2px);
+    /* -webkit-filter: blur(2px); */
+}
+
+.home__background{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+}
+
+.home__title{
+    margin-left: -80px;
+    color: #fff;
+    font-size: 6rem;
+    margin-top: 1rem;
+}
+
+.home__subtitle{
+    color: white;
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+@media (max-width: 560px){
+    .home::after{
+        height: 50vh;
+    }
+
+    .home__background{
+        top: 5%;
+        margin-top: 5px;
+    }
+
+    .home__title{
+        margin-left: -30px;
+        margin-top: 200px;
+        font-size: 3rem;
+    }
+    .home__subtitle{
+        display: none;
+    }
+}
 /*==================== OUR PRODUCTS ====================*/
 /*==================== TESTIMONIALS ====================*/
 /*==================== ABOUT ====================*/
