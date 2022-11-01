@@ -263,6 +263,90 @@ input[type="checkbox"] {
 }
 /*==================== OUR PRODUCTS ====================*/
 /*==================== TESTIMONIALS ====================*/
+.testimonial {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%; 
+}
+.testimonial_header {
+    margin: 50px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial_header h1{
+    font-size: 2.3rem;
+    font-weight: 200;
+    background-color: #202020;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+.testimonial_header span{
+    font-size: 2.2rem;
+    color: #252525;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.testimonial_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.testimonial_box {
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.name-user {
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color:#3d3d3d;
+    font-size: 1.3rem;
+}
+.name-user span{
+    color: #979797;
+    font-size: 1.1rem;
+}
+.review {
+    color: #f9d71c
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comments p{
+    color: #4b4b4b; 
+}
 /*==================== ABOUT ====================*/
 .about_container {
     display: grid;
@@ -285,7 +369,96 @@ input[type="checkbox"] {
 }
 
 /*==================== CONTACT US ====================*/
+.contact_us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; 
+ }
+ .contact_us_header {
+     margin: 50px 0px;
+     padding: 10px 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ .contact_us_header h1{
+     font-size: 2.3rem;
+     font-weight: 200;
+     background-color: #202020;
+     color: white;
+     padding: 10px 20px;
+     text-align: center;
+ }
+ .contact_us_header span{
+     font-size: 2.2rem;
+     color: #252525;
+     margin-bottom: 25px;
+     text-transform: uppercase;
+ }
+ .contact_us_form{
+    width: 50vw;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+.contact_us_form_right{
+    float: right;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 65vw;
+    margin: 0px 10px;
+    
+ }
+ .contact_us_form_right input {
+    background: #eee; /*Define color de fondo*/
+    border-radius: 10px; /*Redondea borde de casilla.*/
+    width: 50%;
+    height: 25px;
+    padding: 5px;
+}
+.contact_us_form_right input p {
+    padding: 10px;
+    margin: 5px;
+}
+.contact_us_form_right textarea{
+    color:#6e6c6c;
+    font-size: 1rem;
+    height: 150px;
+    width: 100%;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box
+}
+.contact_us_form_right textarea::placeholder{
 
+        font-weight: bold;
+        opacity: .5;
+    }
+.contact_us_form_left{
+    color:#3d3d3d;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    align-items: left;
+    float: left;
+    width: 35vw;
+}
+.contact_us_form_right_font{
+    color:#3d3d3d;
+    font-size: 1.3rem;
+ }
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 
