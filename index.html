@@ -206,9 +206,55 @@
             
         </section>
         <!--==================== CONTACT US ====================-->
-        <section class="contact-us section" id="contact-us">
-            
+        <section class="contact_us section" id="contact_us">
+            <div class="contact_us_header">
+                <span>¡Contáctanos!</span>
+                <h1>Para nosotros es muy importante lo que tengas para decir.</h1>
+            </div>
+
+            <div class="contact_us_form">   
+
+                <div class="contact_us_form_left">
+                    <p>Si está interesado en adquirir nuestros productos, trabajar con nosotros, brindarnos algún servicio o ponerse en contacto por cualquier otro motivo, llene nuestro formulario y nos pondemos en contacto con usted cuanto antes.</p>
+                </div>           
+
+                <div class="contact_us_form_right">
+                    <form action="mailto:mail@gmail.com" method="post" enctype="text/plain">
+                        <div class="contact_us_form_right_font">
+                            <input type="text" placeholder="Nombre completo" />
+                            <br>
+                            <!--<input type="text" name="nombre" size="30" maxlength="100">-->
+                            <input type="text" placeholder="Direccion Email" />
+                            <br>
+                            <!--<input type="text" name="email" size="25" maxlength="100">-->
+                            <input type="text" placeholder="Telefono" />
+                            <!--<input type="tel" name="telefono" size="15" maxlength="15">-->
+                            <br>
+                            <select name="Asunto">
+                                <option selected>  Asunto</option>
+                                <option value="1"> Quiero trabajar con ustedes.</option>
+                                <option value="2"> Quiero revender sus productos.</option>
+                                <option value="2"> Quiero ofrecer mis servicios.</option>
+                                <option value="3"> Personalizado.</option>
+                            </select>
+                            <input type="text" placeholder="Personalizado" />
+                            <br>
+                            <label>Por favor, denos más información.</label> 
+
+                            <textarea class="" placeholder="Comentarios" name="comentarios"></textarea>
+                            <br>
+                            <br>
+                            <input type="submit" value="Enviar formulario">
+                            <br>
+                            <br>
+                            <input type="Reset" value="Borrar todo">  
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </section>
+</main>
     </main>
 
     <!--==================== FOOTER ====================-->
