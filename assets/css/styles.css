@@ -348,24 +348,41 @@ input[type="checkbox"] {
     color: #4b4b4b; 
 }
 /*==================== ABOUT ====================*/
-.about_container {
+ .about_container {
+    margin 0px ;
     display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 10px;
-}
+    grid-template-columns:  55% 45%;
+    background-color: #979797;
+    align-items: flex-end;
+}  
+
 .about_description {
     font-family: 'Poppins', sans-serif;
     line-height: 1.7;
     margin: 15px 20px 15px 20px;
     text-align: justify;
     align-content: center;
+    
 }
 .about_description>h1 {
     text-align: right;
+    color:#f1f1f1;
+    font-size: 2.3rem;
+    font-weight: 200;
+    text-transform: uppercase;
 }
+
+.about_description p{
+    text-align: justify;
+    color:#d1d1d1
+
+
+}
+
 .about_image {
+    margin 0;
     width: 100%;
-    display: block;
+    padding: 20px;
 }
 
 /*==================== CONTACT US ====================*/
