@@ -10,8 +10,8 @@
     <script src="https://kit.fontawesome.com/f59d895a33.js" crossorigin="anonymous"></script>
 
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-
+    <link rel="stylesheet" href="./assets/css/styles.css">    
+    
     <title>Wrist-watch Landing Page</title>
 </head>
 
@@ -207,54 +207,92 @@
         </section>
         <!--==================== CONTACT US ====================-->
         <section class="contact_us section" id="contact_us">
+            
+            <!--<div class="contact_us_container_header">-->
             <div class="contact_us_header">
                 <span>¡Contáctanos!</span>
                 <h1>Para nosotros es muy importante lo que tengas para decir.</h1>
             </div>
+            <!--</div>-->
+            
 
+            <!--<div class="contact_us_container_body">-->
             <div class="contact_us_form">   
-
                 <div class="contact_us_form_left">
-                    <p>Si está interesado en adquirir nuestros productos, trabajar con nosotros, brindarnos algún servicio o ponerse en contacto por cualquier otro motivo, llene nuestro formulario y nos pondemos en contacto con usted cuanto antes.</p>
+                    <p>Si está interesado en adquirir nuestros productos, trabajar con nosotros, brindarnos algún servicio o ponerse en contacto por cualquier otro motivo, llene nuestro formulario y nos pondemos en contacto con usted cuanto antes.</p>                    
                 </div>           
+                
+                <div class="contact_us_form_right">                        
+                    <form name = "contactForm" action="/"  id='contactForm'>
+                    
+                        <script src="./formValidation.js"></script>
+                        <input type="text" class="nombre" placeholder="Nombre completo" size="40" maxlength="100" id="nombreCompleto"/>
+                        <div class="error"></div>
 
-                <div class="contact_us_form_right">
-                    <form action="mailto:mail@gmail.com" method="post" enctype="text/plain">
-                        <div class="contact_us_form_right_font">
-                            <input type="text" placeholder="Nombre completo" />
-                            <br>
-                            <!--<input type="text" name="nombre" size="30" maxlength="100">-->
-                            <input type="text" placeholder="Direccion Email" />
-                            <br>
-                            <!--<input type="text" name="email" size="25" maxlength="100">-->
-                            <input type="text" placeholder="Telefono" />
-                            <!--<input type="tel" name="telefono" size="15" maxlength="15">-->
-                            <br>
-                            <select name="Asunto">
-                                <option selected>  Asunto</option>
-                                <option value="1"> Quiero trabajar con ustedes.</option>
-                                <option value="2"> Quiero revender sus productos.</option>
-                                <option value="2"> Quiero ofrecer mis servicios.</option>
-                                <option value="3"> Personalizado.</option>
-                            </select>
-                            <input type="text" placeholder="Personalizado" />
-                            <br>
-                            <label>Por favor, denos más información.</label> 
+                        <input id="email" class="email" type="text" placeholder="Direccion Email" size="40" maxlength="100"/>
+                        <div class="error"></div>
 
-                            <textarea class="" placeholder="Comentarios" name="comentarios"></textarea>
-                            <br>
-                            <br>
-                            <input type="submit" value="Enviar formulario">
-                            <br>
-                            <br>
-                            <input type="Reset" value="Borrar todo">  
-                        </div>
+                        <select name="Asunto" class="contact_us_form_right_select" id="asunto">
+                            <option selected>  Asunto a elegir.</option>
+                            <option value="1"> Quiero trabajar con ustedes.</option>
+                            <option value="2"> Quiero revender sus productos.</option>
+                            <option value="2"> Quiero ofrecer mis servicios.</option>
+                            <option value="3"> Personalizado.</option>
+                        </select>
+                        <div class="error"></div>
+
+                        <input type="text" class= "asuntoPersonalizado" placeholder="Asunto personalizado" size="40" maxlength="100" id="asuntoPersonalziado"/>
+                        <div class="error"></div>
+
+                        <label>Por favor, denos más información.</label>                            
+                        <textarea class="comentarios" placeholder="Comentarios" name="comentarios" id="comentarios"></textarea>
+                        <div class="error"></div>
+
+                        <br>
+
+                        <input type="submit" value="Enviar formulario">
+
+                        <br>
+                        <br>
+
+                        <input type="Reset" value="Borrar todo">  
                     </form>
-                </div>
+                </div> 
+     
+                <iframe class="iframe" src="https://www.youtube.com/embed/zPwqF0OiXZI?fs=0" height="600" width="600" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
+            <!--</div>-->       
+ 
 
         </section>
-</main>
+        <!--==================== FIND US ====================-->
+        <section class="find_us section" id="find_us">
+
+            <!--<div class="find_us_container_header">-->
+            <div class="find_us_header">
+                <h1>¿DÓNDE ENCONTRARNOS?</h1>
+            </div>
+             <!--</div>-->   
+
+             <!--<div class="find_us_container_body">-->
+            <div id="map">
+                <script src="scriptApiGoogleMaps.js"></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>                                       
+            </div>
+
+
+
+            
+            
+            <!--</div>-->   
+
+
+        </section>
+
+
+
+
+
     </main>
 
     <!--==================== FOOTER ====================-->
