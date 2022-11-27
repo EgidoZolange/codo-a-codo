@@ -268,47 +268,39 @@
                 </div>           
                 
                 <div class="contact_us_form_right">                        
-                    <form name = "contactForm" action="/"  id='contactForm'>
-                    
-                        <script src="./formValidation.js"></script>
-                        <input type="text" class="nombre" placeholder="Nombre completo" size="40" maxlength="100" id="nombreCompleto"/>
-                        <div class="error"></div>
+                    <form name = "contactForm" action='' id='contactForm'>                                                
+                        <input type="text" class="nombre" placeholder="Nombre completo" size="40" maxlength="100" id="id_nombre"/>
+                        <div class="nombre_error"></div>
 
-                        <input id="email" class="email" type="text" placeholder="Direccion Email" size="40" maxlength="100"/>
-                        <div class="error"></div>
+                        <input type="text" class="email" placeholder="Direccion Email" size="40" maxlength="100" id="id_email"/>
+                        <div class="email_error"></div>
 
-                        <select name="Asunto" class="contact_us_form_right_select" id="asunto">
-                            <option selected>  Asunto a elegir.</option>
+                        <select name="asunto" class="asunto" id="id_asunto">
+                            <option selected value="-1">  Asunto a elegir.</option>
                             <option value="1"> Quiero trabajar con ustedes.</option>
                             <option value="2"> Quiero revender sus productos.</option>
-                            <option value="2"> Quiero ofrecer mis servicios.</option>
-                            <option value="3"> Personalizado.</option>
+                            <option value="3"> Quiero ofrecer mis servicios.</option>
                         </select>
-                        <div class="error"></div>
+                        <div class="asunto_error"></div>
 
-                        <input type="text" class= "asuntoPersonalizado" placeholder="Asunto personalizado" size="40" maxlength="100" id="asuntoPersonalziado"/>
-                        <div class="error"></div>
+                        <br>
 
                         <label>Por favor, denos más información.</label>                            
-                        <textarea class="comentarios" placeholder="Comentarios" name="comentarios" id="comentarios"></textarea>
-                        <div class="error"></div>
+                        <textarea class="comentarios" placeholder="Comentarios" name="comentarios" id="id_comentarios"></textarea>
+                        <div class="comentarios_error"></div>
 
                         <br>
 
                         <input type="submit" value="Enviar formulario">
-
                         <br>
                         <br>
-
                         <input type="Reset" value="Borrar todo">  
                     </form>
                 </div> 
      
-                <iframe class="iframe" src="https://www.youtube.com/embed/zPwqF0OiXZI?fs=0" height="600" width="600" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <!--</div>-->       
- 
-
+            
         </section>
         <!--==================== FIND US ====================-->
         <section class="find_us section" id="find_us">
@@ -323,20 +315,10 @@
             <div id="map">
                 <script src="scriptApiGoogleMaps.js"></script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>                                       
-            </div>
-
-
-
-            
-            
+            </div>                    
             <!--</div>-->   
-
-
+            
         </section>
-
-
-
-
 
     </main>
 
