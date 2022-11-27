@@ -341,7 +341,16 @@ input[type="checkbox"] {
 .cards:hover{
     box-shadow: 3.9px 7.8px hsl(0deg 0% 0% / 0.38);
 }
+
+.iframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*==================== TESTIMONIALS ====================*/
+
+
 .testimonial {
    display: flex;
    justify-content: center;
@@ -426,13 +435,15 @@ input[type="checkbox"] {
 .client-comments p{
     color: #4b4b4b; 
 }
+
 /*==================== ABOUT ====================*/
  .about_container {
     margin: 0px;
     display: grid;
+    flex: content;
     grid-template-columns:  55% 45%;
     background-color: #979797;
-    align-items: flex-end;
+    align-items: center;
 }  
 
 .about_description {
@@ -452,10 +463,9 @@ input[type="checkbox"] {
 }
 
 .about_description p{
-    text-align: justify;
+    text-align: center;
+    align-items: center;
     color:#d1d1d1
-
-
 }
 
 .about_image {
